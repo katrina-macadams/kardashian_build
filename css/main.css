@@ -5,8 +5,8 @@ html, body {
 
 body { 
     font-family: Arial, Helvetica, sans-serif;
-    background-color: black;
-    color:white;
+    background-color: rgb(115, 60, 65);
+    color: rgb(0, 0, 0); 
 }
 
 .hidden {
@@ -16,7 +16,7 @@ body {
 /* main header rules */ 
 
 header { 
-    background-color: rgb(247, 44, 44);
+    background-color: rgb(115, 60, 65);
     padding: 10px 0px;
 }
 
@@ -27,8 +27,8 @@ header {
 }
 #character_nav {
     background-color: #675050;
-    background-image: url('../images/characters_art_mas_mob_01.jpeg');
-    background-blend-mode:multiply;
+    background-image: url('../images/kardashian_banner.jpeg');
+    background-blend-mode:none;
     background-size: cover;
 
 }
@@ -51,11 +51,11 @@ header {
     text-align: left;
     cursor: pointer;
     transition: box-shadow 0.2s ease;
-    box-shadow: 0 155px 0 0 rgb(255, 0, 0) inset;
+    box-shadow: 0 155px 0 0 rgb(199, 101, 101) inset;
 }
 
 .characters li:hover {
-    box-shadow: 0 220px 0 0 rgb(255, 0, 0) inset;
+    box-shadow: 0 220px 0 0 rgb(199, 101, 101) inset;
 }
 
 article, #instructions {
@@ -90,36 +90,36 @@ article p, #instructions p {
 .sprite {
     width: 150px;
     height: 150px;
-    background-image: url('../images/marvelSprites.jpg')
+    background-image: url('../images/kardashiansprite.png')
 }
 
-#carol {
+#kourtney {
     background-position: -150px 0px;
 }
 
-#clint {
+#kris {
     background-position: -300px 0px;
 }
 
-#hulk {
+#khloe {
     background-position: -450px 0px;
 }
 
-#thor {
+#kendall {
     background-position: -600px 0px;
 }
 
-#widow {
+#kylie {
     background-position: -750px 0px;
 }
 
-#cap:hover, #carol:hover, #clint:hover, #hulk:hover, #thor:hover, #widow:hover {
+#kim:hover, #kourtney:hover, #kris:hover, #khloe:hover, #kendall:hover, #kylie:hover {
     background-position-y: -150px;
 }
 
 /*---Footer Rules---*/
 footer {
-    color:white;
+    color:rgb(0, 0, 0);
     padding:20px 0;
     text-align: center;
 }
