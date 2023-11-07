@@ -1,0 +1,243 @@
+html, body {
+    height: 100%;
+
+}
+
+body { 
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color:white;
+}
+
+.hidden {
+    display: none;
+}
+
+/* main header rules */ 
+
+header { 
+    background-color: rgb(247, 44, 44);
+    padding: 10px 0px;
+}
+
+#main-logo {
+    width: 300px; 
+    display: block;
+    margin: 0px auto;
+}
+#character_nav {
+    background-color: #675050;
+    background-image: url('../images/characters_art_mas_mob_01.jpeg');
+    background-blend-mode:multiply;
+    background-size: cover;
+
+}
+
+.characters {
+    list-style-type:none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0; 
+
+
+
+}
+
+.characters li {
+    height: 220px;
+    margin: 10px 8px;
+    background-color:black;
+    text-align: left;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease;
+    box-shadow: 0 155px 0 0 rgb(255, 0, 0) inset;
+}
+
+.characters li:hover {
+    box-shadow: 0 220px 0 0 rgb(255, 0, 0) inset;
+}
+
+article, #instructions {
+    padding: 20px; 
+}
+
+article h3, #instructions h3 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 14px;
+
+}
+
+article p, #instructions p {
+    width: 80%;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    margin: 0px auto;
+}
+.characters li h5 {
+    color:white;
+    padding: 12px 8px;
+}
+
+.characters li a {
+    text-decoration: none;
+}
+
+/*---Sprite---*/
+
+.sprite {
+    width: 150px;
+    height: 150px;
+    background-image: url('../images/marvelSprites.jpg')
+}
+
+#carol {
+    background-position: -150px 0px;
+}
+
+#clint {
+    background-position: -300px 0px;
+}
+
+#hulk {
+    background-position: -450px 0px;
+}
+
+#thor {
+    background-position: -600px 0px;
+}
+
+#widow {
+    background-position: -750px 0px;
+}
+
+#cap:hover, #carol:hover, #clint:hover, #hulk:hover, #thor:hover, #widow:hover {
+    background-position-y: -150px;
+}
+
+/*---Footer Rules---*/
+footer {
+    color:white;
+    padding:20px 0;
+    text-align: center;
+}
+
+.stickyfooter {
+    position: sticky;
+    top: 100%;
+    height: 80px;
+    background-color:rgb(40, 37, 37)
+}
+/*to move light box around, you hava to add pix's to left (and other directions)*/
+
+.lightbox {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.85);
+    background-image: url(../images/Cap_LB_Bg.png);
+    background-repeat: no-repeat;
+    background-size: 55vh;
+    background-position: 40px bottom;
+    z-index: 5000; /*max out the number here for lightboxes*/ 
+    display: none; 
+}
+
+#lightbox2 {
+    background-image: url(../images/Thor_LB_Bg.png);
+
+}
+
+.lightbox_close {
+    position: relative;
+    top: 20px;
+    left: 95%;
+    color: white;
+    font-size: 48px;
+    text-decoration: none;
+    font-weight: bolder;
+
+}
+
+.lightbox_close:hover {
+    opacity: 0.5;
+    color: red;
+}
+
+.lightbox article {
+    width: 55%;
+    margin-left: 40%;
+    padding-top: 50px;
+}
+
+.lb_text, .lb_heading {
+    text-align: left;
+
+}
+
+.lb_text {
+    margin-left: 0;
+    padding-top: 32px;
+    line-height: 1.6 !important; 
+}
+
+
+.lightbox:target {
+    display: block;
+}
+/* changed the opacity*/
+
+
+
+
+/*---
+Flex Box
+
+display, flex-direction, justify-content, align-items 
+
+Container (parent) > Items (children)
+
+Using axis' we can flip an entire website
+
+main axis start (left side of container, right side of container), 
+cross axis (middle of container), end axis (right corner?)
+
+Block, behaves as expected taking up 100% of the inline space. 
+only taking up what is needed
+
+display: inline flex
+
+flex-direction: row, row-reverse, column, column reverse
+
+align-items (makes everything the same height)
+
+align-items: flex-start, flex-end, center, baseline, stretch, 
+(and then add a height) (different commands are going to move it to certain parts
+of the container, controlling the space in the container)
+
+justify-content: space-evenly (there's a lot more you can do aka space-between, 
+flex-start, flex-end (which moves it on the axis))
+(so even when you add more containers it automatically evens out the spaces)
+
+mdn css transitions
+
+Background Blend Mode
+Blend Modes: normal (default), multiply (darkens), screen (lightens)
+
+background-blend-mode: multiply;
+
+background-size: cover; (scales image, preserving ratio, the image is cropped)
+(leaves no empty space)
+
+CSS Lightbox::afterto display images
+
+Close Button: Lightboxes usually include a close button 
+or a way to exit the lightbox
+
+
+
+---*/
