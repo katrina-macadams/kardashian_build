@@ -27,8 +27,8 @@ header {
 }
 #character_nav {
     background-color: #675050;
-    background-image: url('../images/kardashian_banner.jpeg');
-    background-blend-mode:none;
+    background-image: url('../images/kardashian_banner.jpg');
+    background-blend-mode:hard-light;
     background-size: cover;
 
 }
@@ -139,18 +139,39 @@ footer {
     top: 0px;
     left: 0px;
     background-color: rgba(0, 0, 0, 0.85);
-    background-image: url(../images/Cap_LB_Bg.png);
+    background-image: url(../images/kim.png);
     background-repeat: no-repeat;
     background-size: 55vh;
     background-position: 40px bottom;
     z-index: 5000; /*max out the number here for lightboxes*/ 
     display: none; 
+    color: white;
 }
 
 #lightbox2 {
-    background-image: url(../images/Thor_LB_Bg.png);
+    background-image: url(../images/kourtney.png);
+}
+
+#lightbox3 {
+    background-image: url(../images/kris.png);
+}
+
+#lightbox4 {
+    background-image: url(../images/khloe.png);
+}
+
+
+#lightbox5 {
+    background-image: url(../images/kendall.png);
 
 }
+
+#lightbox6 {
+    background-image: url(../images/kylie.png);
+}
+
+
+
 
 .lightbox_close {
     position: relative;
